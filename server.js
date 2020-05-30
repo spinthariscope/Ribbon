@@ -24,8 +24,9 @@ model_files.forEach(function(modelFile) {
 maps = {}
 var map_files = fs.readdirSync(ribbonconfig.data_paths.maps)
 map_files.forEach(function(mapFile) {
+    var path = require('path')
     console.log('Loading Map: ' + mapFile)
-    var map = require(ribbonconfig.data_paths.maps + mapFile)
+    var map = require(path.join(ribbonconfig.data_paths.maps, mapFile))
     maps[map.room] = map
 })
 
