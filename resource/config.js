@@ -15,8 +15,8 @@ var common_conf = {
     environment: environment,
     max_players: 100,
     data_paths: {
-        items: __dirname + '\\gamedata\\' + 'item\\',
-        maps: __dirname + '\\gamedata\\' + 'map\\',
+        items: __dirname + '/gamedata/' + 'item/',
+        maps: __dirname + '/gamedata/' + 'map/',
     },
     starting_zone: "ribbon_map_home"
 }
